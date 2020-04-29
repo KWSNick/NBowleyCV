@@ -34,6 +34,18 @@ body {
     color: #009CBB ;
 }
 
+.top-section {
+    background-color: #DADDE0;
+}
+
+.mid-section {
+    background-color: #fff;
+}
+
+.bottom-section {
+    background-color: #DADDE0;
+}
+
 .footer-bar {
     color: #F3E9D9;
 }
@@ -130,6 +142,7 @@ body {
     padding: 0;
     margin: auto auto;
     width: 100%;
+    z-index: 99;
 }
 
 .navbar-toggler {
@@ -184,6 +197,57 @@ body {
     padding-top: 2vmax;
     height: 9vmax;
 }
+
+/*-----------------------------------------------Section*/
+#personal-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100%;
+    color: #2F3B64;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.8vmax;
+    font-weight: 200;
+    color: #333745;
+    text-align: center;
+}
+
+.h3-divider {
+    background-color: #333745;
+    width: 15%;
+    height: 2%;
+}
+
+.top-section {}
+
+.left-info {
+    padding: 0;
+}
+
+.right-info {
+    padding: 0;
+}
+
+.key {
+    display: inline-block;
+    width: 30%;
+    text-transform: uppercase;
+    padding: 1vh;
+    font-weight: 500;
+    text-align: left;
+}
+
+.value {
+    display: inline-block;
+    width: 65%;
+    padding: 0.5vh 0;
+    text-align: right;
+}
+
+.mid-section {}
+
+.bottom-section {}
 
 /*-----------------------------------------------Footer*/
 .footer-links {
