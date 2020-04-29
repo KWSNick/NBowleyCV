@@ -81,10 +81,13 @@ HTML5
 
 CSS3
 
+JavaScript (Via Bootstrap 4)
+
 Bootstrap 4
 
 - Provides the mobile first approach
 - Allows simpler formatting of the space
+- Provides JavaScript functions
 - Provides a common set of design components which have been modified for the final design.
 
 The MIT License (MIT)
