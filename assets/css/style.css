@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
 /*-----------------------------------------------Colors*/
 .bg-home {
     background-color: #9E0000;
@@ -36,17 +45,17 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: 120%;
-    min-width: 20vh;
-    max-width: 20vh;
-    min-height: 20vh;
-    max-height: 20vh;
+    min-width: 20vmax;
+    max-width: 20vmax;
+    min-height: 20vmax;
+    max-height: 20vmax;
 }
 
-.heading {
-    margin: auto 1vw auto 1vw;
-}
+.heading {}
 
 .name-title-row { 
+    margin: auto 1vw auto 1vw;
+    height: 11vmax;
 }
 
 .name-title {
@@ -57,6 +66,7 @@
     font-weight: 100;
     font-size: 5vw;
     color: #F3E9D9;
+    letter-spacing: 10px;
 }
 
 .name-title h2 {
@@ -65,6 +75,12 @@
     font-size: 3vw;
     color: #F3E9D9;
 }
+
+.nav-row {
+    margin: auto 1vw auto 1vw;
+}
+
+/*-----------------------------------------------Navbar*/
 
 .navbar {
     padding: 0;
@@ -80,31 +96,47 @@
 
 .navbar-toggler-icon {
     background-color: #08BA19;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 #navbarList {
     position: absolute;
+    width: 100%;
+    height: 9vmax;
+}
+
+.navbar-nav {
+    height: 100%;
 }
 
 .navbar-nav .list-inline-item {
-    height: 10vh;
-    width: 25vw;
     margin: 0;
+}
+
+.navbar-nav .col-md-3 {
+    padding: 0;
 }
 
 .navbar-nav li a {
     font-family: "Raleway", sans-serif;
-    font-size: 4vh;
+    font-size: 1.5vmax;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
     font-weight: 500;
 }
 
+.icon {
+    font-size: 3vh;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: #F3E9D9;
-    padding: auto 0 auto 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2vmax;
+    height: 9vmax;
 }
 
 
