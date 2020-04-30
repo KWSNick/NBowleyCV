@@ -34,6 +34,11 @@ body {
     color: #009CBB ;
 }
 
+.navbar-toggler-icon:active {
+    background-color: #08BA19;
+}
+
+
 .top-section {
     background-color: #DADDE0;
 }
@@ -95,10 +100,12 @@ body {
     animation-fill-mode: initial;
 }
 
-.heading {}
+.heading {
+    margin-right: 0;
+}
 
 .name-title-row { 
-    margin: auto 1vw auto 1vw;
+    margin: auto 0 auto 1vw;
     height: 11vmax;
 }
 
@@ -133,7 +140,7 @@ body {
 }
 
 .nav-row {
-    margin: auto 1vw auto 1vw;
+    margin: auto 0 auto 1vw;
 }
 
 /*-----------------------------------------------Navbar*/
@@ -152,8 +159,9 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-color: #08BA19;
+    background-color: #333745;
     font-size: 4vh;
+    width: 100%;
 }
 
 #navbarList {
@@ -199,10 +207,10 @@ body {
 }
 
 /*-----------------------------------------------Section*/
-#personal-info {
+.content-section {
     font-family: "Montserrat", sans-serif;
     font-size: 100%;
-    color: #2F3B64;
+    color: #2F3B64; 
 }
 
 h3 {
@@ -216,7 +224,15 @@ h3 {
 .h3-divider {
     background-color: #333745;
     width: 15%;
-    height: 2%;
+    height: 0.5vh;
+}
+
+.job-title {
+    font-weight: 700;
+}
+
+.hlight {
+    font-weight: 500;
 }
 
 .top-section {}
@@ -245,9 +261,39 @@ h3 {
     text-align: right;
 }
 
+.value a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100%;
+    color: #2F3B64;
+    text-decoration: none; 
+}
+
+.value a:hover {
+    color: #009CBB;
+}
+
 .mid-section {}
 
+.intro-text p {
+    text-align: center;
+    padding: 5vh 7vw;
+    margin: 0;
+}
+
 .bottom-section {}
+
+.reasons {
+    font-family: "Raleway", sans-serif;
+    text-transform: Uppercase;
+    font-weight: 500;
+    font-size: 150%;
+    text-align: center;
+    padding: 3vh;
+}
+
+.reasons i {
+    font-size: 250%;
+}
 
 /*-----------------------------------------------Footer*/
 .footer-links {
