@@ -113,8 +113,17 @@
           <h3>Contact Me</h3>
           <hr class="h3-divider" />
           <div class="row no-gutters">
-            <div class="col-12 intro-text">
-                <p>Contact Form</p>
+            <div class="col-12 contact-form">
+                <form class="form-group center-form">
+                    <input type="text" name="name" id="fullname" class="form-control form-item" placeholder="Name" required><br>
+                    <input type="email" name="email" id="emailaddress" class="form-control form-item" placeholder="Email Address" required><br>
+                    <textarea rows="6" name="message" id="message" class="form-control form-item" placeholder="Message" required></textarea>
+                    <div class="row no-gutters">
+                        <div class="col-12 center-button">
+                            <button type="submit" class="btn btn-secondary">Send</button>
+                        </div>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
