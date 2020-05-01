@@ -30,10 +30,6 @@ body {
   background-color: #4e7697;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #009cbb;
-}
-
 .navbar-toggler-icon:active {
   background-color: #08ba19;
 }
@@ -58,20 +54,36 @@ body {
   color: #f3e9d9;
 }
 
-.footer-links a:hover {
-  color: #009cbb;
-}
-
 .socials a {
   color: #f3e9d9;
 }
 
-.socials a:hover {
+.form-item {
+  background-color: #dadde0;
+}
+
+.content-section a {
+  color: #2f3b64;
+}
+
+a:hover {
   color: #009cbb;
 }
 
-.form-item {
-  background-color: #dadde0;
+.content-section a:hover {
+  color: #009cbb;
+}
+
+.btn:hover {
+  color: #009cbb;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #009cbb;
+}
+
+.value a:hover {
+  color: #009cbb;
 }
 
 /*-----------------------------------------------Header*/
@@ -125,13 +137,13 @@ body {
 
 #name {
   animation: text-expand;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: initial;
 }
 
 #title {
   animation: text-expand2;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: initial;
 }
 
@@ -192,6 +204,10 @@ body {
   vertical-align: middle;
   text-transform: uppercase;
   font-weight: 500;
+
+  animation: text-expand3;
+  animation-duration: 5s;
+  animation-fill-mode: initial;
 }
 
 .icon {
@@ -214,6 +230,10 @@ body {
   color: #2f3b64;
 }
 
+.content-section a {
+  text-decoration: none;
+}
+
 h3 {
   font-family: "Raleway", sans-serif;
   font-size: 3.8vmax;
@@ -222,7 +242,7 @@ h3 {
   text-align: center;
 
   animation: text-expand3;
-  animation-duration: 6.7s;
+  animation-duration: 5s;
   animation-fill-mode: initial;
 }
 
@@ -282,10 +302,6 @@ h4 {
   text-decoration: none;
 }
 
-.value a:hover {
-  color: #009cbb;
-}
-
 .mid-section {
 }
 
@@ -313,12 +329,15 @@ h4 {
 
 /*----------------------------------------------- About*/
 .history-line {
-  height: 50vh;
+  height: 60vh;
+  margin: 0 5vw;
 }
 
 .timeline-top,
-.timeline-bottom {
-  height: 20vh;
+.timeline-bottom,
+.timeline-vert-top,
+.timeline-vert-bottom {
+  height: 25vh;
 }
 
 .timeline-entries {
@@ -329,9 +348,6 @@ h4 {
   text-align: center;
 }
 
-.job-desc-a {
-}
-
 .bottom-section .job-desc-b {
   background-color: #c4c6c8;
 }
@@ -340,8 +356,12 @@ h4 {
   margin-top: 2vh;
 }
 
+.job-desc-header h4 {
+  font-size: 100%;
+}
+
 .job-header {
-  height: 30%;
+  margin: 5% 0;
 }
 
 .job-desc .col-12 {
@@ -350,6 +370,14 @@ h4 {
 
 .key-skills {
   text-align: left;
+  font-size: 90%;
+}
+
+.key-skills li {
+  margin: 5px 0;
+}
+
+.provider-employer {
 }
 
 /*-----------------------------------------------Contact Form*/
@@ -369,10 +397,6 @@ h4 {
   font-size: 4vh;
   font-weight: 300;
   color: #f3e9d9;
-}
-
-.btn:hover {
-  color: #009cbb;
 }
 
 .form-item {
@@ -431,7 +455,7 @@ h4 {
   50% {
     opacity: 0.4;
   }
-  65% {
+  60% {
     letter-spacing: 12px;
   }
   85% {
@@ -451,7 +475,7 @@ h4 {
     opacity: 0;
     letter-spacing: 0px;
   }
-  75% {
+  65% {
     opacity: 0.5;
     letter-spacing: 1px;
   }
@@ -468,7 +492,7 @@ h4 {
     opacity: 0;
   }
   50% {
-    opacity: 0.15;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -494,6 +518,18 @@ h4 {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .job-desc-header {
+    margin-top: 1vh;
+  }
+  .job-desc-header h4 {
+    font-size: 90%;
+  }
+  .dates {
+    font-size: 90%;
+  }
+}
+
 @media (min-width: 768px) {
   .center-form {
     margin: 0 auto;
@@ -506,15 +542,12 @@ h4 {
 
   .timeline-top,
   .timeline-bottom {
-    height: 15vh;
+    height: 17vh;
   }
 
   .timeline-entries {
-    padding-top: 4%;
+    padding-top: 4vh;
   }
-}
-
-@media (min-width: 768px) {
   .timeline-top-entries {
     border-bottom: 4px solid #333745;
   }
@@ -535,10 +568,13 @@ h4 {
     display: block;
     top: -12px;
     position: absolute;
-    left: 50%;
+    right: 50%;
     border-radius: 20px;
     content: "";
     background: #333745;
+  }
+  .dates {
+    margin-top: 1.5vh;
   }
 }
 
@@ -569,6 +605,6 @@ h4 {
     background: #333745;
   }
   .timeline-entries {
-      font-size: 70%;
+    font-size: 70%;
   }
 }
